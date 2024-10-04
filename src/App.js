@@ -1,23 +1,58 @@
-import logo from './logo.svg';
 import './App.css';
+import Homepage from './components/Homepage';
+
+import { Route, Routes } from 'react-router-dom';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import { useState } from 'react';
+import { ToggleContext } from './components/ToggleContext';
+
+import MainMenu from './MainMenu';
 
 function App() {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const flip = () => {
+    setIsFlipped(!isFlipped);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {' '}
+      <>
+        {' '}
+        <ToggleContext.Provider value={[isFlipped, flip]}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className="flexContainer">
+                  <MainMenu />
+                  <Homepage isFlipped={isFlipped} flip={flip} />
+                </div>
+              }
+            />
+            <Route
+              path="/Projects"
+              element={
+                <div className="flexContainer">
+                  <MainMenu />
+                  <Projects isFlipped={isFlipped} flip={flip} />
+                </div>
+              }
+            />
+            <Route
+              path="/Contact"
+              element={
+                <div className="flexContainer">
+                  <MainMenu />
+                  <Contact isFlipped={isFlipped} flip={flip} />
+                </div>
+              }
+            />
+          </Routes>{' '}
+        </ToggleContext.Provider>
+      </>{' '}
     </div>
   );
 }

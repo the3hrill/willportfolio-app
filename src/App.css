@@ -1,19 +1,49 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1f75fe /*#3f00ff;#7df9ff ,#00bfff ,  */;
+
+  color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  transition: background-color 1.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.colorChange {
+  animation: colorChange 2s linear forwards;
+}
+
+.colorChangeReverse {
+  animation: colorChangeReverse 2s linear forwards;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbutton {
+  display: flex;
+  justify-content: left;
+  margin-top: 5px;
+  margin-left: 1.5rem;
+}
+.flexContainer {
+  display: grid;
+  grid-template-areas:
+    'nav'
+    'main';
+  grid-gap: 10px;
+  align-items: start;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -23,16 +53,34 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+ */
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+@keyframes colorChangeReverse {
+  0% {
+    color: yellow;
+  }
+  100% {
+    color: white;
   }
 }

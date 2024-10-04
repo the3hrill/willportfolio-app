@@ -1,0 +1,48 @@
+.ProjectsBody {
+  height: 60vh;
+}
+
+.ProjectsTitle {
+  text-align: center;
+}
+
+.ProjectsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.headerTitle {
+  font-size: 2em;
+  text-align: center;
+}
+.ProjectsTitle {
+  font-size: 4em;
+}
+.gifsize img {
+  width: 100px;
+  height: 100px;
+}
+
+#weatherapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#translateapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#littlelemonapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
