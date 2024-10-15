@@ -20,14 +20,13 @@ function App() {
     <div className="App">
       {' '}
       <>
-        {' '}
+        <MainMenu />
         <ToggleContext.Provider value={[isFlipped, flip]}>
           <Routes>
             <Route
               path="/"
               element={
                 <div className="flexContainer">
-                  <MainMenu />
                   <Homepage isFlipped={isFlipped} flip={flip} />
                 </div>
               }
@@ -36,7 +35,6 @@ function App() {
               path="/Projects"
               element={
                 <div className="flexContainer">
-                  <MainMenu />
                   <Projects isFlipped={isFlipped} flip={flip} />
                 </div>
               }
@@ -45,7 +43,6 @@ function App() {
               path="/Contact"
               element={
                 <div className="flexContainer">
-                  <MainMenu />
                   <Contact isFlipped={isFlipped} flip={flip} />
                 </div>
               }

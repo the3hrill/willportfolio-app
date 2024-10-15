@@ -13,7 +13,7 @@ function TextAnimationThree({ children }) {
                 {[...child.props.children].map((char, j) => (
                   <motion.span
                     key={j}
-                    style={{ display: 'inline-block', fontSize: '2rem' }}
+                    style={{ display: 'inline-block', fontSize: '1rem' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

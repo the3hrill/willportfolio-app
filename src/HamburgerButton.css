@@ -1,0 +1,25 @@
+.hamburger-button {
+  height: 5rem;
+  width: 5rem;
+}
+
+@media (max-width: 992px) {
+  .hamburger-button {
+    height: 4.5rem; /* smaller size for screens up to 992px wide */
+    width: 4.5rem; /* smaller size for screens up to 992px wide */
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger-button {
+    height: 4rem; /* even smaller size for screens up to 768px wide */
+    width: 4rem; /* even smaller size for screens up to 768px wide */
+  }
+}
+
+@media (max-width: 576px) {
+  .hamburger-button {
+    height: 3.5rem; /* smallest size for screens up to 576px wide */
+    width: 3.5rem; /* smallest size for screens up to 576px wide */
+  }
+}

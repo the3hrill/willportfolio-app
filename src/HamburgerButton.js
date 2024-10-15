@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import './HamburgerButton.css';
 
-function HamburgerButton({ toggle }) {
+function HamburgerButton({ isOpen, toggle }) {
   const [active, setActive] = useState(false);
   const [backgroundColor, setBackgroundColor] = useState(
     'rgba(255, 255, 255, 0)'
@@ -18,8 +19,7 @@ function HamburgerButton({ toggle }) {
       onClick={handleClick}
       style={{
         position: 'relative',
-        height: '5rem',
-        width: '5rem',
+
         borderRadius: '50%',
         backgroundColor: 'rgba(255, 255, 255, 0)',
         transition: 'colors 0.15s ease-in-out',
