@@ -31,7 +31,10 @@ function Homepage({ isFlipped, flip }) {
           ) : (
             <TextAnimation style={{ whiteSpace: 'nowrap' }} />
           )}
-          <h2 className={isFlipped ? 'colorChange' : 'colorChangeReverse'}>
+          <h2
+            className={isFlipped ? 'colorChange' : 'colorChangeReverse'}
+            style={{ fontSize: '3em' }}
+          >
             Creator
           </h2>
           {/*   <motion.h3
@@ -42,6 +45,7 @@ function Homepage({ isFlipped, flip }) {
         </motion.h3> */}
           {isFlipped ? (
             <motion.h3
+              style={{ fontSize: '2rem' }}
               className="coderChange"
               whileHover={{ scale: 1.3, x: 50, rotateY: 70 }}
               transition={{ duration: 0.5 }}
@@ -50,6 +54,7 @@ function Homepage({ isFlipped, flip }) {
             </motion.h3>
           ) : (
             <motion.h3
+              style={{ fontSize: '2rem' }}
               className="artistChange"
               whileHover={{ scale: 1.1, x: -50, rotateY: -70 }}
               transition={{ duration: 0.5 }}
@@ -58,14 +63,14 @@ function Homepage({ isFlipped, flip }) {
             </motion.h3>
           )}
         </motion.div>
-        <div className="sub-header-text">
+        <section className="sub-header-text">
           <TextAnimationThree>
             <p className="HomepageContent">
               ui/ux developer --- front-end web developer
             </p>
             <p> I like to create beautiful easy to understnad things</p>
           </TextAnimationThree>
-        </div>
+        </section>
 
         <ToggleButton onClick={flip} />
       </motion.header>
