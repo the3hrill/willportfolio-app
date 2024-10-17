@@ -6,14 +6,14 @@ function TextAnimationThree({ children }) {
   return (
     <main>
       <section>
-        <h1 className="HeaderAnimationTwo">
+        <h1 className="HeaderAnimationThree">
           <AnimatePresence>
             {React.Children.map(children, (child, i) => (
               <div key={i}>
                 {[...child.props.children].map((char, j) => (
                   <motion.span
                     key={j}
-                    style={{ display: 'inline-block', fontSize: '1rem' }}
+                    style={{ display: 'inline-block', fontSize: '1.5rem' }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

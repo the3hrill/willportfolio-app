@@ -150,8 +150,8 @@ const Projects = ({ isFlipped, flip }) => {
             </motion.div>
           </container>
         </section>
+        <ToggleButton onClick={flip} />
       </div>
-      <ToggleButton onClick={flip} />
     </div>
   );
 };
