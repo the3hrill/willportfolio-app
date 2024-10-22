@@ -15,7 +15,7 @@ function Menu() {
               <Link to="/Projects">Projects</Link>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/Contact">Contacts</Link>
             </li>
           </ul>
         </nav>

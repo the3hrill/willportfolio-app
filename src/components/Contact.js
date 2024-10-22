@@ -13,6 +13,8 @@ const Contact = ({ isFlipped, flip }) => {
       ? "'Protest Guerrilla', sans-serif"
       : "'Concert One', sans-serif";
   }, [isFlipped]);
+  const dropShadowColor = isFlipped ? '#fff' : '#000';
+
   return (
     <div className="ContactsBody">
       <h1 className="ContactsTitle">Contacts</h1>
@@ -20,11 +22,18 @@ const Contact = ({ isFlipped, flip }) => {
         <motion.div
           className="SocialIcon"
           style={{
-            filter: 'drop-shadow(0 10px 10px #000)',
+            filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
           }}
           whileHover={{
             scale: 1.2,
-            filter: 'drop-shadow(0 10px 10px #000)',
+            filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
+          }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            delay: 0.5,
           }}
         >
           <SocialIcon
@@ -35,8 +44,18 @@ const Contact = ({ isFlipped, flip }) => {
 
         <motion.div
           className="SocialIcon"
-          style={{ filter: 'drop-shadow(0 10px 10px #000)' }}
-          whileHover={{ scale: 1.2, filter: 'drop-shadow(0 10px 10px #000)' }}
+          style={{ filter: `drop-shadow(0 10px 5px ${dropShadowColor})` }}
+          whileHover={{
+            scale: 1.2,
+            filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
+          }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            delay: 0.8,
+          }}
         >
           <SocialIcon
             className="SocialIcon"
@@ -47,15 +66,35 @@ const Contact = ({ isFlipped, flip }) => {
 
         <motion.div
           className="SocialIcon"
-          style={{ filter: 'drop-shadow(0 10px 10px #000)' }}
-          whileHover={{ scale: 1.2, filter: 'drop-shadow(0 10px 10px #000)' }}
+          style={{ filter: `drop-shadow(0 10px 5px ${dropShadowColor})` }}
+          whileHover={{
+            scale: 1.2,
+            filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
+          }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            delay: 1,
+          }}
         >
           <SocialIcon className="SocialIcon" url="https://github.com" />
         </motion.div>
         <motion.div
           className="SocialIcon"
-          style={{ filter: 'drop-shadow(0 10px 10px #000)' }}
-          whileHover={{ scale: 1.2, filter: 'drop-shadow(0 10px 10px #000)' }}
+          style={{ filter: `drop-shadow(0 10px 5px ${dropShadowColor})` }}
+          whileHover={{
+            scale: 1.2,
+            filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
+          }}
+          animate={{ y: [0, -10, 0] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: 'reverse',
+            delay: 1.2,
+          }}
         >
           <SocialIcon className="SocialIcon" url="https://instagram.com" />
         </motion.div>

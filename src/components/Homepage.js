@@ -1,13 +1,12 @@
 import React from 'react';
 import './Homepage.css';
-8;
+
 import TextAnimation from './TextAnimation';
-import styled from 'styled-components';
-import Wrapper from './TextAnimation';
+
 import ToggleButton from './ToggleButton';
-import { transform } from 'framer-motion';
+
 import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import TextAnimationTwo from './TextAnimationTwo';
 import TextAnimationThree from './TextAnimationThree';
 
