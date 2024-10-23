@@ -1,38 +1,4 @@
-/* import React from 'react';
-import { motion, AnimatePresence, useTime } from 'framer-motion';
-
-function TextAnimation() {
-  const text = 'William Jones'.split('');
-
-  return (
-    <main>
-      <section>
-        <h1>
-          <AnimatePresence>
-            {text.map((char, i) => (
-              <motion.span
-                key={i}
-                style={{ display: 'inline-block' }}
-                initial={{ opacity: 0, y: '-100%' }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  delay: i * 0.1,
-                }}
-              >
-                {char}
-              </motion.span>
-            ))}
-          </AnimatePresence>
-        </h1>
-      </section>
-    </main>
-  );
-}
-
-export default TextAnimation;
- */
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './TextAnimation.css';
 

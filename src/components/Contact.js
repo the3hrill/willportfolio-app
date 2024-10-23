@@ -25,7 +25,7 @@ const Contact = ({ isFlipped, flip }) => {
             filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
           }}
           whileHover={{
-            scale: 1.2,
+            scale: 1.5,
             filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
           }}
           animate={{ y: [0, -10, 0] }}
@@ -46,7 +46,7 @@ const Contact = ({ isFlipped, flip }) => {
           className="SocialIcon"
           style={{ filter: `drop-shadow(0 10px 5px ${dropShadowColor})` }}
           whileHover={{
-            scale: 1.2,
+            scale: 1.5,
             filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
           }}
           animate={{ y: [0, -10, 0] }}
@@ -68,7 +68,7 @@ const Contact = ({ isFlipped, flip }) => {
           className="SocialIcon"
           style={{ filter: `drop-shadow(0 10px 5px ${dropShadowColor})` }}
           whileHover={{
-            scale: 1.2,
+            scale: 1.5,
             filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
           }}
           animate={{ y: [0, -10, 0] }}
@@ -85,7 +85,7 @@ const Contact = ({ isFlipped, flip }) => {
           className="SocialIcon"
           style={{ filter: `drop-shadow(0 10px 5px ${dropShadowColor})` }}
           whileHover={{
-            scale: 1.2,
+            scale: 1.5,
             filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
           }}
           animate={{ y: [0, -10, 0] }}

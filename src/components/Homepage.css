@@ -39,10 +39,23 @@ span {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .HomepageContent {
   font-size: 40px;
+}
+
+.coderChange .artistChange {
+  margin-top: none;
+  margin-bottom: none;
+}
+
+.frontEndHeader {
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 /* @media (max-width: 700px) {

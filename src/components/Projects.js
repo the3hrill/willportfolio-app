@@ -17,6 +17,8 @@ const Projects = ({ isFlipped, flip }) => {
       ? "'Protest Guerrilla', sans-serif"
       : "'Concert One', sans-serif";
   }, [isFlipped]);
+  const dropShadowColor = isFlipped ? '#fff' : '#000';
+
   return (
     <div className="ProjectsBody">
       <h1 className="ProjectsTitle">Projects</h1>
@@ -28,13 +30,13 @@ const Projects = ({ isFlipped, flip }) => {
               className="gifsize"
               animate={{
                 borderRadius: 32,
-                filter: 'drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               whileHover={{
                 scale: 1.8,
                 y: -40,
-                filter: 'drop-shadow(-20px 20px 20px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
                 zIndex: 1,
               }}
               onClick={() =>
@@ -47,13 +49,13 @@ const Projects = ({ isFlipped, flip }) => {
               className="gifsize"
               animate={{
                 borderRadius: 32,
-                filter: 'drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               whileHover={{
                 scale: 1.8,
                 y: -40,
-                filter: 'drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
                 zIndex: 1,
               }}
               onClick={() =>
@@ -72,13 +74,13 @@ const Projects = ({ isFlipped, flip }) => {
               className="gifsize"
               animate={{
                 borderRadius: 32,
-                filter: 'drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               whileHover={{
                 scale: 1.8,
                 y: -40,
-                filter: 'drop-shadow(0 20px 20px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               onClick={() =>
                 window.open('https://github.com/the3hrill/weatherapp')
@@ -95,13 +97,13 @@ const Projects = ({ isFlipped, flip }) => {
               className="gifsize"
               animate={{
                 borderRadius: 32,
-                filter: 'drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               whileHover={{
                 scale: 1.8,
                 y: -40,
-                filter: 'drop-shadow(-20px 20px 20px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
                 zIndex: 1,
               }}
               onClick={() =>
@@ -114,13 +116,13 @@ const Projects = ({ isFlipped, flip }) => {
               className="gifsize"
               animate={{
                 borderRadius: 32,
-                filter: 'drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               whileHover={{
                 scale: 1.8,
                 y: -40,
-                filter: 'drop-shadow(0 20px 20px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
                 zIndex: 1,
               }}
               onClick={() =>
@@ -133,13 +135,13 @@ const Projects = ({ isFlipped, flip }) => {
               className="gifsize"
               animate={{
                 borderRadius: 32,
-                filter: 'drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
               }}
               transition={{ duration: 0.4, ease: 'easeInOut' }}
               whileHover={{
                 scale: 1.8,
                 y: -40,
-                filter: 'drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5))',
+                filter: `drop-shadow(0 10px 5px ${dropShadowColor})`,
                 zIndex: 1,
               }}
               onClick={() =>

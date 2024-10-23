@@ -63,12 +63,13 @@ function Homepage({ isFlipped, flip }) {
             </motion.h3>
           )}
         </motion.div>
+
         <section className="sub-header-text">
+          <motion.div className="frontEndHeader">
+            Front-end Web Developer
+          </motion.div>
           <TextAnimationThree>
-            <p className="HomepageContent">
-              ui/ux developer --- front-end web developer
-            </p>
-            <p> I like to create beautiful easy to understnad things</p>
+            <p>React Javascript Node SQL CSS HTML Figma</p>
           </TextAnimationThree>
         </section>
 
