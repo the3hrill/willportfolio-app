@@ -5,9 +5,7 @@ import './HamburgerButton.css';
 
 function HamburgerButton({ isOpen, toggle }) {
   const [active, setActive] = useState(false);
-  const [backgroundColor, setBackgroundColor] = useState(
-    'rgba(255, 255, 255, 0)'
-  );
+  const [setBackgroundColor] = useState('rgba(255, 255, 255, 0)');
   const handleClick = () => {
     setActive(!active);
     toggle();
