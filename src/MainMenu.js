@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useAnimate, stagger } from 'framer-motion';
-import { MenuToggle } from './MenuToggle';
+import './MenuToggle';
 import Menu from './Menu';
 import './Nav.css';
 import HamburgerButton from './HamburgerButton';
@@ -45,7 +45,7 @@ function useMenuAnimation(isOpen) {
       ],
       ...menuAnimations,
     ]);
-  }, [isOpen]);
+  }, [isOpen, animate]);
 
   return scope;
 }
