@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './ToggleButton.css';
 import { ReactComponent as BoldPaintIcon } from '../assets/logos/boldpaint.svg';
